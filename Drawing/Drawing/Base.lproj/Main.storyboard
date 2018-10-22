@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14278.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfF-zb-ggk">
+                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                                <gestureRecognizers/>
+                            </arscnView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZAE-kc-IFZ">
+                                <rect key="frame" x="164" y="589" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swb-d8-00D">
+                                <rect key="frame" x="56" y="589" width="63" height="30"/>
+                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="Clear"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Swb-d8-00D" firstAttribute="top" secondItem="ZAE-kc-IFZ" secondAttribute="top" id="AYc-0h-j2l"/>
+                            <constraint firstItem="qfF-zb-ggk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CnX-98-rna"/>
+                            <constraint firstItem="ZAE-kc-IFZ" firstAttribute="leading" secondItem="Swb-d8-00D" secondAttribute="trailing" constant="45" id="HjT-VU-BBk"/>
+                            <constraint firstAttribute="bottom" secondItem="qfF-zb-ggk" secondAttribute="bottom" constant="20" symbolic="YES" id="ITG-4R-8kU"/>
+                            <constraint firstItem="Swb-d8-00D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="569" id="J20-ew-Ee2"/>
+                            <constraint firstItem="qfF-zb-ggk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WXt-oP-Kow"/>
+                            <constraint firstItem="Swb-d8-00D" firstAttribute="centerY" secondItem="ZAE-kc-IFZ" secondAttribute="centerY" id="bHh-S5-Ltn"/>
+                            <constraint firstItem="qfF-zb-ggk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ee5-gD-Geb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZAE-kc-IFZ" secondAttribute="trailing" constant="162" id="gXB-8F-0lF"/>
+                            <constraint firstItem="Swb-d8-00D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="u61-sV-Cmz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="clearButton" destination="Swb-d8-00D" id="p1H-Qw-vAb"/>
+                        <outlet property="sceneView" destination="qfF-zb-ggk" id="YWy-ll-WPF"/>
+                        <outlet property="switchDraw" destination="ZAE-kc-IFZ" id="4Uc-Bd-9Ud"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
